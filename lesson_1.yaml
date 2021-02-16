@@ -1,6 +1,5 @@
 ---
-- hosts: all
-  become: yes
+- hosts: linux
   tasks:
   - name: check ping is working
-    shell: python3 /root/script.py >> /tmp/script.log
+    shell: /home/sysadmin/script.sh &>> /tmp/script.log
