@@ -1,0 +1,7 @@
+---
+- hosts: windows_servers
+  tasks:
+    - name: add user admin
+      win_user:
+        name: admin
+        password: Pa$$w0rd
